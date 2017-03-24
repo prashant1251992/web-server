@@ -24,7 +24,7 @@ var middleWare= {
 app.use(middleWare.logger);
 
 app.get('/about',middleWare.requestAuthentication,function(req,res){
-	res.send('Hello 2 !');
+	res.send('Hello 2 !!!!');
 }); 
 
 app.use(express.static(__dirname +'/public'));
