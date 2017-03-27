@@ -26,7 +26,7 @@ var middleWare=require('./middleWare.js');
 app.use(middleWare().logger);
 
 app.get('/about',middleWare().requestAuthentication,function(req,res){
-	res.send('Heroku Application);
+	res.send('Heroku Apllication');
 }); 
 
 app.use(express.static(__dirname +'/public'));
