@@ -2,7 +2,7 @@ var express= require('express');
 
 var app = express();
 
-var PORT=3000; //capital variable specify the constants in JS
+var PORT=process.env.PORT || 3000; //capital variable specify the constants in JS
 
 var middleWare=require('./middleWare.js');
 
